@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Fotos Progra Web",
+			"path": "../Fotos Progra Web"
+		},
+		{
+			"name": "Programacion web",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Programacion web"
+	}
+}

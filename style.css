@@ -1,0 +1,53 @@
+/* El estilo de la web*/
+
+p{
+    color:blue;
+}
+
+/* selector {propiedad: valor ;} */
+
+h1{background-color: red;}
+
+/* todo CSS funciona con CAJAS */
+/* 4 partes: contenido - padding - borde - margen */
+
+h2{background-color: red; padding: 20px;}
+
+/* Existen dos tipos de cajas: 
+Block: ocupan todo el ancho NO PODES TENER ALGO AL LADO
+Inline: ocupan el tamano del contenido PUEDO PONER ALGO AL LADO
+
+/* Para cambiar a una determinada cosa le pongo un id a esa cosa
+y asi de esa forma la nombro y la modifico por ejemplo:*/
+
+#image1 { width: 50%} 
+.titular {font-size: large;} /* esto es una CLASE OSEA UN GRUPOOO/
+
+
+/* 50 vw  no va con su elemento padre
+50 % va con su elemento padre (ESTO CASI SIEMPRE)
+
+DISPLAY:
+
+*/
+
+form {
+    display: inline;
+} /* NO TE APARECE NADA AL LADO !!!
+
+
+/* 
+POSITION:
+1. Fixed: donde quiero que este siempre (no se mueve de ese lugar ejemplo el header siempre lo uso y wpp tmb)
+2. Absoluto: 
+3. Relativo: se posiciona relativamente de su posicion normal NO USAR MUCHO SON TRAMPOSAS
+
+
+FUENTES:
+
+
+QUERY (CONSULTA BD):
+
+
+*/
+
