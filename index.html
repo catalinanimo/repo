@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./techain.css">
+  <link rel="stylesheet" href="./index.css">
+
 
 </head>
 
 <body>
+
 
  
   <nav class="navbar navbar-expand-lg navbar-light menu-personalizado">
@@ -29,6 +31,8 @@
 
 
   <img src=" imagenes/IMG_0407.PNG" id="logo-techain">
+
+  
   
   <div class ="quienes-son">
 
@@ -41,6 +45,9 @@
 
  
   <div class="fundadores-techain">
+
+    
+
 
     <div class="coj-nom-y-fo"> 
 
@@ -62,7 +69,7 @@
 
     <div class="coj-nom-y-fo">
       <img src = "imagenes/IMG_0412.jpg"  class="imagenfundador">
-      <h4> DES Thomas</h4>
+      <h4> DES Julito</h4>
     </div>
   
   </div>
@@ -102,6 +109,24 @@
 
 
   </div>
+
+  <div class="resaltar" >
+    <h2>WEB3 REVOLUTION </h2>
+    <h4> Is about to begin...</h4>
+  </div>
+
+
+  <script>
+    
+    document.querySelector('.resaltar').addEventListener('mouseover', function() {
+      this.style.backgroundColor = 'lightblue';
+    });
+
+    
+    document.querySelector('.resaltar').addEventListener('mouseout', function() {
+      this.style.backgroundColor = 'black'; // Vuelve al color original al quitar el mouse
+    });
+  </script>
   
 
   <div class="quehacemo">
@@ -146,19 +171,88 @@
  
  
   </div>
+  
+
+  <div class="cuentaregresiva">
+
+    <h2>La venta de NFTs arrancara en...</h2>
+    <p id="demo"></p>
+
+    <script>
+    
+    var countDownDate = new Date("Dec 1, 2023 15:00:00").getTime();
+    
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
+    
+      var distance = countDownDate - now;
+        
+    
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+     
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "DISPONIBLE";
+      }
+    }, 1000);
+    </script>
+  
+  </div>
 
 
 
+  <div id = "javaformulario"> </div>
 
 
-  <footer class="bg-dark text-center text-white">
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2023 Copyright:
-      <a class="text-white" href="http://127.0.0.1:5500/Techain.html.com/">Techain.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+    <h3> No te pierdas las novedades, suscribite!</h3>
+
+    <form onsubmit="return validarFormulario()">
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="email" id="email" placeholder="Correo electrónico">
+      <button type="submit">Enviar</button>
+    </form>
+    
+    <script>
+      function validarFormulario() {
+        var nombre = document.getElementById("nombre").value;
+        var email = document.getElementById("email").value;
+    
+        if (nombre === "" || email === "") {
+          alert("Por favor, completa todos los campos.");
+          return false; 
+        }
+      
+        
+        alert("Formulario enviado correctamente.");
+        return true;
+      }
+    </script>
+
+  </div>
+
+
+<footer class="bg-dark text-center text-white">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="http://127.0.0.1:5500/Techain.html.com/">Techain.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  
+
+
+
+  
 
   
 </body>

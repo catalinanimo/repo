@@ -228,6 +228,62 @@
     background-color: #c394d5;
 }
 
+
+
+#nombre {
+    background-color: rgb(35, 24, 96);
+    font-weight: bolder;
+    
+
+}
+
+#email {
+    background-color: rgb(4, 14, 40);
+    font-weight: bolder;
+}
+
+.cuentaregresiva {
+    display: inline-block;
+    margin-left: 30vw;
+    padding: 3vw;
+    border: 0.5vw#000000 solid ; background-color: rgb(222, 50, 153);
+    text-align: center;
+    font-size: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+   
+    
+}
+
+.resaltar h2 {
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;
+    text-align: center;
+    color: rgb(228, 238, 238);
+}
+
+.resaltar h4 {
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;
+    text-align: center;
+    color: rgb(228, 238, 238);
+}
+.cuentaregresiva p{
+    background-color: rgb(223, 136, 207);
+    font-weight: bolder;
+}
+
+.cuentaregresiva h2 {
+    color: azure;
+}
+
+.resaltar:hover {
+    background-color: lightblue;
+    transition: background-color 0.3s ease;
+  }
+  
+
+
 @media (max-width: 767px) {
     
 
@@ -453,5 +509,23 @@
 .quehacemo {
     
     background-color: #c394d5;
+    
 }
+
+.cuentaregresiva h2 {
+
+    font-size: 15px;
 }
+
+.cuentaregresiva p {
+    font-size: 20px; color: rgb(0, 0, 0);
+}
+
+}
+
+
+
+
+
+
+
