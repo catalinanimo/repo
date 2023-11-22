@@ -1,11 +1,15 @@
 
 
 .menu-personalizado {
-    background-color:black ; color:aliceblue;
+    background-color:rgb(0, 0, 0) ; color:aliceblue;
 }
 
 .navbar-nav a{
     color:rgb(225, 225, 225); font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;
+}
+
+.navbar {
+    background-color: rgb(145, 65, 235);
 }
 
 
@@ -524,8 +528,111 @@
 }
 
 
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
+
+.card{ 
+    box-shadow: 0 4px 8px 0 #000;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial;
+}
+
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 2vw;
+}
+
+.price {
+    color: grey;
+    font-size: 3vw;
+}
+
+.card button:hover {
+    opacity: 0.5;
+}
+
+/*modal content*/
+
+.modal-container {
+    width: 75%;
+    margin: 0% 10%;
+    color: azure;
+    background-color: #130a39;
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los elementos se envuelvan si no caben en una sola fila */
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: center;
+    position: fixed;
+    top: 12vh;
+    scrollbar-color: none;
+}
 
 
 
 
+/*para no ver la barra de scroll*/
 
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    color: white;
+    
+    width: 100%;
+}
+
+.modal-header-title {
+    justify-self: start;
+    
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container > div> p {
+    margin-left: 10vw;
+
+
+}
+.modal-container >div>h3 {
+    margin-left: 10vw;
+}
+
+.modal-container > div> img {
+    margin-top: 5vw;
+   margin-left: 10vw;
+    height: 110px;
+    width: 110px;
+
+}
+
+.total-content {
+    
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
